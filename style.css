@@ -85,3 +85,9 @@ body {
   color: white;
   font-weight: bold;
 }
+.linked > a:hover {
+  background-color: rgb(10, 9, 9);
+  color:  rgb(246 72 59);
+transform: scale(1.1);
+transition-duration: 1s;
+}
