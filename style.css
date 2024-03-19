@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Hebrew:wght@100..900&family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Hebrew:wght@100..900&family=Staatliches&display=swap");
 
 * {
-    font-family: "Noto Sans Hebrew", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: 100;
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 100;
 }
 body {
+  background-image: url("https://i.pinimg.com/originals/75/d4/ee/75d4eebb74bd12b0a8f07ba23ee14f54.gif");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-clip: border-box; */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bisque;
+  background-color: rgba(0, 0, 0, 0.365);
 }
 .row {
   width: 85%;
@@ -28,7 +33,6 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgba(135, 114, 88, 0.18);
 }
 
 .card {
