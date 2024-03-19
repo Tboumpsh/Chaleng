@@ -54,6 +54,10 @@ body {
   background-image: url("https://i.pinimg.com/originals/62/f1/da/62f1da32967de421a054c9fe5b98b0cf.gif");
   background-size: cover;
 }
+.image:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
 
 .description {
   display: flex;
@@ -87,7 +91,7 @@ body {
 }
 .linked > a:hover {
   background-color: rgb(10, 9, 9);
-  color:  rgb(246 72 59);
-transform: scale(1.1);
-transition-duration: 1s;
+  color: rgb(246 72 59);
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
