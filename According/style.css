@@ -1,0 +1,52 @@
+body {
+  background-image: url("images/large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.contanier {
+  margin: 2% 0;
+  width: 50%;
+  height: 600px;
+  background-color: #f3ffff;
+  border-radius: 16px;
+  padding: 2%;
+  overflow-y: scroll;
+}
+
+.contanier > header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.contanier > header > h2 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+#questionRow {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+}
+#paragragh > p {
+  font-size: 15px;
+}
+
+.show{
+    display: block;
+}
+
