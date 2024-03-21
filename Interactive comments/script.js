@@ -16,7 +16,10 @@ function clickButton() {
     let li = document.createElement("li");
     let edit = document.createElement("span");
     let delet = document.createElement("span");
+    let replay = document.createElement("span");
+
     let p = document.createElement("p");
+    replay.innerHTML += "↩️";
     let user = text.value;
     p.innerHTML = user;
     edit.innerHTML = "🖋️";
@@ -24,6 +27,7 @@ function clickButton() {
     li.append(edit);
     li.append(p);
     li.append(delet);
+    li.append(replay);
     li.setAttribute("autocomplete", "on");
     ul.append(li);
     edit.addEventListener("click", () => {
@@ -32,5 +36,12 @@ function clickButton() {
     delet.addEventListener("click", () => {
       li.style.display = "none";
     });
-  }
+
+  replay.addEventListener("click", () => {
+    let list = document.createElement("ul");
+    let newinput = document.createElement("input");
+    let lir = document.createElement("li");
+    
+  });
+}
 }
