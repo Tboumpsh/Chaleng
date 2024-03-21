@@ -18,30 +18,38 @@ function clickButton() {
     let delet = document.createElement("span");
     let replay = document.createElement("span");
 
-    let p = document.createElement("p");
-    replay.innerHTML += "↩️";
-    let user = text.value;
-    p.innerHTML = user;
-    edit.innerHTML = "🖋️";
-    delet.innerHTML += "🗑️";
-    li.append(edit);
-    li.append(p);
-    li.append(delet);
-    li.append(replay);
-    li.setAttribute("autocomplete", "on");
-    ul.append(li);
-    edit.addEventListener("click", () => {
-      p.contentEditable = true;
-    });
-    delet.addEventListener("click", () => {
-      li.style.display = "none";
-    });
-
-  replay.addEventListener("click", () => {
-    let list = document.createElement("ul");
-    let newinput = document.createElement("input");
-    let lir = document.createElement("li");
-    
-  });
+    createLi(replay, edit, delet, li);
+    text.value = "";
+  }
 }
+
+function createLi(replay, edit, delet, li) {
+  let p = document.createElement("p");
+  replay.innerHTML += "↩️";
+  let user = text.value;
+  p.innerHTML = user;
+  edit.innerHTML = "🖋️";
+  delet.innerHTML += "🗑️";
+  li.append(edit);
+  li.append(p);
+  li.append(delet);
+  li.append(replay);
+  li.setAttribute("autocomplete", "on");
+  ul.append(li);
+  edit.addEventListener("click", () => {
+    p.contentEditable = true;
+  });
+  delet.addEventListener("click", () => {
+    li.style.display = "none";
+  });
+  replay.addEventListener("click", () => {
+    console.log("ggg");
+    const parentLi = li.parentNode.closest('li'); 
+    const clonedLi = parentLi.cloneNode(true); 
+    const replyLi = document.createElement("li");
+    createLi(replay, edit, delet, replyLi);
+    replyLi.classList.add('reply-li');
+    replyLi.append(clonedLi); 
+    li.replaceWith(replyLi); i
+  });
 }
