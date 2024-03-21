@@ -33,6 +33,7 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
@@ -52,6 +53,13 @@ body {
   width: 100%;
   height: 220px;
   background-image: url("https://i.pinimg.com/originals/62/f1/da/62f1da32967de421a054c9fe5b98b0cf.gif");
+  background-size: cover;
+}
+.image1 {
+  border-radius: 13px;
+  width: 100%;
+  height: 220px;
+  background-image: url("https://i.gifer.com/origin/f9/f9889257dd191dc36b7d28d4578beeef_w200.gif");
   background-size: cover;
 }
 .image:hover {
