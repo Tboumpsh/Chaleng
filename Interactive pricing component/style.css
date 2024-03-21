@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 78%;
+  height: 760px;
+  background-color: bisque;
+}
+.rightSide {
+  width: 50%;
+  height: 580px;
+  background-color: rgb(90, 74, 55);
+}
+.leftSide {
+  width: 50%;
+  height: 580px;
+  background-color: rgb(165, 97, 14);
+}
