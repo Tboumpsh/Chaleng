@@ -91,3 +91,6 @@ li {
   justify-content: space-around;
   align-items: center
 }
+span{
+  cursor: pointer;
+}
