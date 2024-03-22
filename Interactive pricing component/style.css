@@ -19,9 +19,14 @@ body {
   border: 2px solid rgb(90, 38, 180);
 }
 .rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 410px;
   background-color: rgba(243, 240, 235, 0);
+  padding: 1%;
 }
 .leftSide {
   width: 100%;
@@ -40,11 +45,11 @@ body {
   padding: 2%;
   /* background-color: aquamarine; */
 }
-.childeLeft{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
+.childeLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .checked {
   display: flex;
@@ -55,19 +60,19 @@ body {
   gap: 10px;
 }
 
-.childeRight{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
+.childeRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.childeRight > button{
-    width: 90%;
-    height: 48px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    background-color: rgb(46, 0, 75);
-    color: white;
+.childeRight > button {
+  width: 90%;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: rgb(46, 0, 75);
+  color: white;
 }
