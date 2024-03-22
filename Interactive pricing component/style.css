@@ -1,22 +1,27 @@
+@import url(https://db.onlinewebfonts.com/c/0976a2619014c5855690b7509fab4c6e?family=Helvetica+Now+Display);
+* {
+  font-family: "Helvetica Now Display";
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: url("https://images.hdqwalls.com/download/eagle-landscape-mountains-minimalist-ez-2932x2932.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  color: white;
 }
 .container {
-  margin: 2% 0;
+  margin: 3% 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 40%;
   height: 652px;
-  background-color: rgb(243, 234, 249);
+  background-color: rgba(88, 21, 51, 0.505);
   border-radius: 13px;
-  border: 2px solid rgb(90, 38, 180);
 }
 .rightSide {
   display: flex;
@@ -43,7 +48,6 @@ body {
   width: 50%;
   height: 240px;
   padding: 2%;
-  /* background-color: aquamarine; */
 }
 .childeLeft {
   display: flex;
@@ -73,7 +77,7 @@ body {
   border-radius: 50px;
   border: none;
   outline: none;
-  background-color: rgb(46, 0, 75);
+  background-color: rgb(134 33 55);
   color: white;
 }
 .title {
@@ -151,7 +155,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #caa9ff;
+  background-color: #ffbcdf;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -169,11 +173,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #5016b5;
+  background-color: rgb(134 33 55);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #5016b5;
+  box-shadow: 0 0 1px rgb(134 33 55);
 }
 
 input:checked + .slider:before {
@@ -194,18 +198,17 @@ input:checked + .slider:before {
 }
 
 /* btns tag style */
-.btnRight > a{
+.btnRight > a {
   text-decoration: none;
   background-color: rgb(243, 177, 157);
   color: #f4672a;
   height: 25px;
-  width:48%;
+  width: 48%;
   border-radius: 50px;
   line-height: 1.5;
 }
 
-
-#text > span{
+#text > span {
   font-size: 21px;
   color: #a5a1a1;
 }
