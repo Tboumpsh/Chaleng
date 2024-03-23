@@ -6,3 +6,15 @@ let array = [
   { name: "python", tags: ["backend", "devops", "Frontend", "developer"] },
   { name: "Premier", tags: ["render", "edit", "design", "video"] },
 ];
+
+let input = document.getElementById("search");
+let check = document.getElementById("box");
+
+input.oninput = function () {
+  let search = input.value;
+  array.forEach((item) => {
+    if (search === item) {
+      console.log("done");
+    }
+  });
+};
