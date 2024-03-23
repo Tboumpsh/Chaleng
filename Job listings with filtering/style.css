@@ -3,28 +3,154 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
 }
 .container {
   width: 100%;
-  height: 775px;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: bisque;
 }
-.upheader{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(163, 139, 110);
+.upheader {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(163, 139, 110);
+  background-image: url("https://papers.co/wallpaper/papers.co-vu37-dark-art-minimal-pattern-blue-36-3840x2400-4k-wallpaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.mainContent{
-    width: 100%;
-    height: 675px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
-    background-color: rgb(68, 53, 34);
+.mainContent {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+  background-color: rgb(24, 24, 24);
+}
+.columns {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.columns > div {
+  width: 38%;
+  height: 80px;
+  background-color: #393a3b;
+  border-radius: 12px;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.search {
+  width: 70%;
+  height: 40px;
+  background-color: #242524;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  padding: 1%;
+}
+.search > input {
+  width: max-content;
+  height: 25px;
+  background-color: #242524;
+  border: none;
+  outline: none;
+  padding: 1%;
+  border-radius: 15px;
+  color: white;
+}
+.columns > div > .image {
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.columns > div > .image > img {
+  width: 65px;
+  height: 60px;
+  border-radius: 50px;
+}
+.information {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+}
+.leftInfo,
+.rightInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  width: 50%;
+  height: 60px;
+}
+.leftInfo {
+  align-items: baseline;
+  gap: 2px;
+  background-color: unset;
+  padding: 1%;
+}
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.date {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+h4,
+h2,
+p {
+  margin: 0;
+}
+.title > h4 {
+  font-size: 13px;
+  color: rgb(48, 222, 253);
+}
+.title > a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(73, 207, 248, 0.468);
+  border-radius: 50px;
+  width: 40px;
+  text-align: center;
+  color: white;
+}
+.name > h2 {
+  font-size: 15px;
+  color: white;
+}
+.date > p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }
