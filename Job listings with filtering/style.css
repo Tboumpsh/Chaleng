@@ -154,3 +154,26 @@ p {
   font-weight: bold;
   color: white;
 }
+
+#box > li {
+  list-style: none;
+  color: white;
+  background-color: aquamarine;
+  width: 80px;
+  height: 28px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 2;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#box > li > span {
+  cursor: pointer;
+}
+
+.hide{
+  display: none !important;
+}

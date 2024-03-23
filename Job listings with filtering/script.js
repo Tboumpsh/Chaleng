@@ -9,12 +9,30 @@ let array = [
 
 let input = document.getElementById("search");
 let check = document.getElementById("box");
+let select = document.querySelectorAll(".rightInfo");
 
 input.oninput = function () {
   let search = input.value;
+
   array.forEach((item) => {
-    if (search === item) {
-      console.log("done");
-    }
+    let tags = item.tags;
+
+    tags.forEach((tag) => {
+      console.log(tag);
+      if (search === tag) {
+        console.log("done");
+        let li = document.createElement("li");
+        let a = document.createElement("span");
+        li.textContent += `${tag}`;
+        li.append(a);
+        a.textContent += "❌";
+        check.append(li);
+        a.addEventListener("click", () => {
+          li.classList.add("hide");
+        });
+      }
+    });
   });
+
+  console.log("note");
 };
