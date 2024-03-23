@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  height: 775px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
+}
+.upheader{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(163, 139, 110);
+}
+.mainContent{
+    width: 100%;
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(68, 53, 34);
+}
