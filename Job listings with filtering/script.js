@@ -2,14 +2,14 @@ let array = [
   { name: "html", tags: ["developer", "Frontend", "CSS", "HTML"] },
   { name: "JavaScript", tags: ["developer", "Frontend", "CSS", "cleanCode"] },
   { name: "Photoshap", tags: ["design", "edit", "draw", "character"] },
-  { name: "C", tags: ["Junior", "backend", "cleanCode", "developer"] },
+  { name: "Frontend", tags: ["Junior", "backend", "cleanCode", "developer"] },
   { name: "python", tags: ["backend", "devops", "Frontend", "developer"] },
-  { name: "Premier", tags: ["render", "edit", "design", "video"] },
+  { name: "devops", tags: ["render", "edit", "design", "video"] },
 ];
 
 let input = document.getElementById("search");
 let check = document.getElementById("box");
-let select = document.querySelectorAll(".rightInfo");
+let all = document.querySelectorAll(".rightInfo");
 
 input.oninput = function () {
   let search = input.value;
@@ -36,3 +36,9 @@ input.oninput = function () {
 
   console.log("note");
 };
+
+all.forEach((e) => {
+  array.forEach((item) => {
+    e.innerHTML += `<option>${item.name}</option>`;
+  });
+});
