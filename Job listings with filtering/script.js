@@ -10,6 +10,9 @@ let array = [
 let input = document.getElementById("search");
 let check = document.getElementById("box");
 let all = document.querySelectorAll(".rightInfo");
+// let info = document.getElementById("info");
+let info = document.querySelectorAll(".information");
+console.log(info);
 
 input.oninput = function () {
   let search = input.value;
@@ -42,3 +45,27 @@ all.forEach((e) => {
     e.innerHTML += `<option>${item.name}</option>`;
   });
 });
+
+input.oninput = function () {
+  let search = input.value.toLowerCase();
+
+  all.forEach((li) => {
+    let found = false;
+
+    array.forEach((item) => {
+      let name = item.name.toLowerCase();
+      if (name.includes(search)) {
+        found = true;
+        return;
+      }
+    });
+    if (found) {
+    info.forEach((e) => {
+     
+        e.classList.add("found");
+        window.addEventListener("load");
+      
+    });
+  }إ
+  });
+};

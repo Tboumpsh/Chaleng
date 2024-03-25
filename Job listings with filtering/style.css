@@ -208,8 +208,17 @@ p {
 
 .rightInfo>option {
   font-size: 15px;
-  background-color: antiquewhite;
+  background-color: rgba(168, 204, 255, 0.845);
   width: max-content;
   border-radius: 30px;
   text-align: center;
+  color: white;
+}
+
+
+
+
+
+.found{
+  border: 2px solid red;
 }
