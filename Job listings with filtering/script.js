@@ -5,6 +5,8 @@ let array = [
   { name: "Frontend", tags: ["Junior", "backend", "cleanCode", "developer"] },
   { name: "python", tags: ["backend", "devops", "Frontend", "developer"] },
   { name: "devops", tags: ["render", "edit", "design", "video"] },
+  { name: "devops", tags: ["render", "edit", "design", "video"] },
+  { name: "devops", tags: ["render", "edit", "design", "video"] },
 ];
 
 let input = document.getElementById("search");
@@ -40,32 +42,38 @@ input.oninput = function () {
   console.log("note");
 };
 
-all.forEach((e) => {
-  array.forEach((item) => {
-    e.innerHTML += `<option>${item.name}</option>`;
-  });
+// all.forEach((e) => {
+//   array.forEach((item) => {
+//     item.tags.forEach((tag) => {
+//       e.innerHTML += `<option>${tag}</option>`;
+//     });
+//   });
+// });
+all.forEach((divElement, index) => {
+  divElement.innerHTML = `<option>${array[index].tags}</option>`;
 });
 
-input.oninput = function () {
+input.oninput = function() {
   let search = input.value.toLowerCase();
 
   all.forEach((li) => {
     let found = false;
 
+    li.classList.remove("found");
+
     array.forEach((item) => {
-      let name = item.name.toLowerCase();
-      if (name.includes(search)) {
+      let tags = item.tags.map(tag => tag.toLowerCase());
+      if (tags.includes(search)) {
         found = true;
         return;
       }
     });
+
     if (found) {
-    info.forEach((e) => {
-     
-        e.classList.add("found");
-        window.addEventListener("load");
-      
-    });
-  }إ
+      li.classList.add("found");
+      li.style.display = "";
+    } else {
+      li.style.display = "none";
+    }
   });
 };
