@@ -53,27 +53,29 @@ all.forEach((divElement, index) => {
   divElement.innerHTML = `<option>${array[index].tags}</option>`;
 });
 
-input.oninput = function() {
+input.oninput = function () {
   let search = input.value.toLowerCase();
 
   all.forEach((li) => {
     let found = false;
 
     li.classList.remove("found");
+    li.style.display = "none";
 
     array.forEach((item) => {
-      let tags = item.tags.map(tag => tag.toLowerCase());
-      if (tags.includes(search)) {
+      let tags = item.tags.map((tag) => tag.toLowerCase());
+      if (
+        tags.includes(search) &&
+        li.textContent.toLowerCase().includes(item.name.toLowerCase())
+      ) {
         found = true;
+        li.style.display = "";
         return;
       }
     });
 
     if (found) {
       li.classList.add("found");
-      li.style.display = "";
-    } else {
-      li.style.display = "none";
     }
   });
 };
