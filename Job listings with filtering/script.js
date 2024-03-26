@@ -12,10 +12,9 @@ let array = [
 let input = document.getElementById("search");
 let check = document.getElementById("box");
 let all = document.querySelectorAll(".rightInfo");
-// let info = document.getElementById("info");
 let info = document.querySelectorAll(".information");
-console.log(info);
 
+// badage element in search
 input.oninput = function () {
   let search = input.value;
 
@@ -38,17 +37,10 @@ input.oninput = function () {
       }
     });
   });
-
-  console.log("note");
 };
 
-// all.forEach((e) => {
-//   array.forEach((item) => {
-//     item.tags.forEach((tag) => {
-//       e.innerHTML += `<option>${tag}</option>`;
-//     });
-//   });
-// });
+// filtering 
+
 all.forEach((divElement, index) => {
   divElement.innerHTML = `<option>${array[index].tags}</option>`;
 });
