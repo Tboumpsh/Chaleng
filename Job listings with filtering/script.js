@@ -39,7 +39,7 @@ input.oninput = function () {
   });
 };
 
-// filtering 
+// filtering
 
 all.forEach((divElement, index) => {
   divElement.innerHTML = `<option>${array[index].tags}</option>`;
@@ -52,7 +52,7 @@ input.oninput = function () {
     let found = false;
 
     li.classList.remove("found");
-    li.style.display = "none";
+    // li.style.display = "none";
 
     array.forEach((item) => {
       let tags = item.tags.map((tag) => tag.toLowerCase());
