@@ -6,6 +6,7 @@
   font-style: normal;
   font-variation-settings: 100;
 }
+
 body {
   background-image: url("https://i.pinimg.com/originals/75/d4/ee/75d4eebb74bd12b0a8f07ba23ee14f54.gif");
   /* background-size: cover; */
@@ -17,6 +18,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .container {
   width: 100%;
   height: 775px;
@@ -25,6 +27,7 @@ body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.365);
 }
+
 .row {
   width: 85%;
   height: 680px;
@@ -48,6 +51,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .image {
   border-radius: 13px;
   width: 100%;
@@ -55,6 +59,7 @@ body {
   background-image: url("https://i.pinimg.com/originals/62/f1/da/62f1da32967de421a054c9fe5b98b0cf.gif");
   background-size: cover;
 }
+
 .image1 {
   border-radius: 13px;
   width: 100%;
@@ -62,6 +67,7 @@ body {
   background-image: url("https://i.gifer.com/origin/f9/f9889257dd191dc36b7d28d4578beeef_w200.gif");
   background-size: cover;
 }
+
 /* card3 */
 .image2 {
   border-radius: 13px;
@@ -70,9 +76,33 @@ body {
   background-image: url("https://cdn.dribbble.com/users/174627/screenshots/5411267/dribbble_slider.gif");
   background-size: cover;
 }
+
+.image3 {
+  border-radius: 13px;
+  width: 100%;
+  height: 220px;
+  background-image: url("https://i.pinimg.com/originals/70/8f/6b/708f6b005d4d43d99c7d006204ec86d4.gif");
+  background-size: cover;
+}
+
 .image:hover {
-    transform: scale(1.1);
-    transition-duration: 1s;
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.image1:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.image2:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+.image3:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 
 .description {
@@ -81,7 +111,7 @@ body {
   flex-direction: column;
 }
 
-.description > header > h2 {
+.description>header>h2 {
   font-size: 32px;
   margin: 0;
   margin-bottom: 8px;
@@ -94,7 +124,8 @@ body {
   flex-direction: row;
   width: 100%;
 }
-.linked > a {
+
+.linked>a {
   width: 100%;
   border-radius: 10px;
   height: 50px;
@@ -105,7 +136,8 @@ body {
   color: white;
   font-weight: bold;
 }
-.linked > a:hover {
+
+.linked>a:hover {
   background-color: rgb(10, 9, 9);
   color: rgb(246 72 59);
   transform: scale(1.1);
